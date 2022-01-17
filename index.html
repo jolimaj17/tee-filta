@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <a class="cart" href="myFunction()"> My Cart (4) </a>
+    </header>
+    <div class="content">
+      <div class="content-tee">
+        <img src="./img/classic-tee.jpg" class="content-tee-img" alt="tee" />
+      </div>
+      <div class="content-description">
+        <h2>Classic Tee</h2>
+        <p class="price">$75.00</p>
+        <p class="details">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+          eligendi totam nisi, autem recusandae quidem vitae labore esse
+          officiis at dolorum minima quo quasi quia commodi adipisci quas
+          doloremque unde!
+        </p>
+        <div class="sizes">
+          <div class="flex-container-size">
+            <label class="size">Size<span id="size">*</span></label>
+            <span id="value"></span>
+          </div>
+          <div class="flex-container">
+            <div id="sml1" onclick="small()">S</div>
+            <div id="sml2" onclick="medium()">M</div>
+            <div id="sml3" onclick="large()">L</div>
+          </div>
+          <button>Add TO Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function small() {
+        let value = "S";
+        document.getElementById("value").innerHTML = value;
+        document.getElementById("sml1").style.borderColor = "#222222";
+      }
+      function medium() {
+        let value = "M";
+        document.getElementById("value").innerHTML = value;
+        document.getElementById("sml2").style.borderColor = "#222222";
+      }
+      function large() {
+        let value = "L";
+        document.getElementById("value").innerHTML = value;
+        document.getElementById("sml3").style.borderColor = "#222222";
+    
+      }
+    </script>
+  </body>
+</html>
